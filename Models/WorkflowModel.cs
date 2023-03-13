@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    internal class WorkflowModel
+    public class WorkflowModel:ApplicationModel
     {
+        public string Id { get; set; }
+        public ApplicationModel form { get; set; }
+        public ICollection<Stages> stages { get; set; }
     }
 }
